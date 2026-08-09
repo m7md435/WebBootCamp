@@ -74,9 +74,31 @@ age = int(age_text)
 print(f"Your age is: {age}")
 
 #lab 11
-password = "python123"
-print("Welcome to the system")
 
-while password == "":
-    password = input("Please enter the password: ")
+password = input("Enter the password please: ")
+while password != "python123":
+    password = input("Incorrect password. Please enter the password: ")
+print("Password accepted. Welcome to the system!")
+
+#lab 12
+for score in [80, 55, 45 ,90 ]:
+    if score < 50:
+        pass
+    print(f"if passed the: {score}")
+
+for record in [80, 55, 45 ,90 ]:
+    if record < 50:
+        continue
+    print(f"if passed the: {record}")
+
+for record in [80, 55, 45 ,90 ]:
+    if record < 50:
+        break
+    print(f"if passed the: {record}")
+
+#lab 13
+
+for row in range( 1, 4):
+    for column in range(1, 4):
+        print(f"{row} X  {column} = {row * column}")
 
