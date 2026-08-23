@@ -37,6 +37,8 @@ school_system/
 ## Use Case Diagram
 ![](https://github.com/m7md435/WebBootCamp/blob/17e2ce3be9389aa4b39d1e45f6c57a87299ed6b9/project-unit-2/use%20case%20diagram-2026-08-23-135750.png)
 ## Class Diagram
+![](https://github.com/m7md435/WebBootCamp/blob/4272a24962e1b29df621e1b993e586f316fc76a0/project-unit-2/class%20diagram-2026-08-23-140220.png)
+## Activity Diagram for the Add Student Scenario
 ![]()
 ## How to Run
 
