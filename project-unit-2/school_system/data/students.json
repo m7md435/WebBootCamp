@@ -1,0 +1,14 @@
+[
+    {
+        "student_id": "123456",
+        "name": "mohammed",
+        "age": 21,
+        "enrolled_courses": []
+    },
+    {
+        "student_id": "3467",
+        "name": "mo",
+        "age": 1000,
+        "enrolled_courses": []
+    }
+]

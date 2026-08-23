@@ -1,0 +1,53 @@
+# Unit 2 School Management System
+
+This is a Python console application for managing students, courses, and teachers.
+
+## Features
+
+- Add students, courses, and teachers
+- Enroll student in course
+- Drop student from course
+- Assign teacher to course
+- View students and courses
+- View one student's courses
+- View one course's students
+- Save and load data using JSON files
+- Handle errors and log them to `logs.txt`
+
+## Folder Structure
+
+```text
+school_system/
+├── main.py
+├── models/
+│   ├── student.py
+│   ├── course.py
+│   ├── teacher.py
+│   └── school.py
+├── utils/
+│   ├── file_handler.py
+│   ├── validators.py
+│   └── logging.py
+└── data/
+    ├── students.json
+    ├── courses.json
+    └── teachers.json
+```
+
+## How to Run
+
+From the workspace root (`project-unit-2`):
+
+```powershell
+python school_system/main.py
+```
+
+## Data Files
+
+The app stores data in:
+
+- `school_system/data/students.json`
+- `school_system/data/courses.json`
+- `school_system/data/teachers.json`
+
+Data is loaded when the app starts and saved when you choose **Save and Exit** from the menu.

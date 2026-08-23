@@ -1,0 +1,14 @@
+[
+    {
+        "course_code": "00",
+        "title": "pys",
+        "assigned_teacher": null,
+        "enrolled_students": []
+    },
+    {
+        "course_code": "1234",
+        "title": "python",
+        "assigned_teacher": null,
+        "enrolled_students": []
+    }
+]

@@ -1,0 +1,9 @@
+Age must be a whole number.
+A student with that ID already exists.
+Name cannot be empty.
+Age must be a whole number.
+A student with that ID already exists.
+A student with that ID already exists.
+Student not found.
+Course not found.
+Student is already enrolled in that course.
