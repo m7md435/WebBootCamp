@@ -39,7 +39,7 @@ school_system/
 ## Class Diagram
 ![](https://github.com/m7md435/WebBootCamp/blob/4272a24962e1b29df621e1b993e586f316fc76a0/project-unit-2/class%20diagram-2026-08-23-140220.png)
 ## Activity Diagram for the Add Student Scenario
-![](https://github.com/m7md435/WebBootCamp/blob/cfb44ea0e69c94685b5e7ebed9b054597ecd38c6/project-unit-2/activity%20diagram-2026-08-23-135947.png)
+![](https://github.com/m7md435/WebBootCamp/blob/ebf7df3411efbbab2438e2c7f988d75b491a0142/project-unit-2/activity%20diagram-2026-08-23-140806.png)
 ## How to Run
 
 From the workspace root (`project-unit-2`):
