@@ -34,6 +34,8 @@ school_system/
     └── teachers.json
 ```
 
+## Use Case Diagram
+![]()
 ## How to Run
 
 From the workspace root (`project-unit-2`):
