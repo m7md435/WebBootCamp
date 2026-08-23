@@ -35,7 +35,7 @@ school_system/
 ```
 
 ## Use Case Diagram
-![]()
+![](https://github.com/m7md435/WebBootCamp/blob/17e2ce3be9389aa4b39d1e45f6c57a87299ed6b9/project-unit-2/use%20case%20diagram-2026-08-23-135750.png)
 ## How to Run
 
 From the workspace root (`project-unit-2`):
