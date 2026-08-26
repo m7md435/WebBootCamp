@@ -1,0 +1,147 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	background: #eef4f8;
+	color: #183446;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.navbar,
+.nav-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+}
+
+.site-header {
+	background: #ffffff;
+	border-bottom: 3px solid #f4b942;
+	box-shadow: 0 3px 12px rgba(24, 52, 70, 0.12);
+}
+
+.navbar {
+	width: min(100% - 32px, 900px);
+	min-height: 180px;
+	margin: 0 auto;
+	padding: 28px 16px;
+}
+
+.navbar a {
+	color: #183446;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.logo {
+	color: #087e8b !important;
+	font-size: 1.4rem;
+	letter-spacing: 1px;
+}
+
+.nav-links a {
+	padding: 8px 16px;
+	border-radius: 6px;
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+	background: #087e8b;
+	color: #ffffff;
+}
+
+.navbar a span {
+	margin-right: 4px;
+}
+
+.hero {
+	display: flex;
+	align-items: center;
+	gap: 48px;
+	width: min(100% - 32px, 900px);
+	margin: 48px auto;
+	padding: 36px;
+	background: #ffffff;
+	border-radius: 12px;
+	box-shadow: 0 8px 24px rgba(24, 52, 70, 0.12);
+}
+
+.hero-content,
+.hero-image {
+	flex: 1 1 0;
+}
+
+.hero-label {
+	margin: 0 0 10px;
+	color: #087e8b;
+	font-size: 0.8rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.hero h1 {
+	margin: 0 0 16px;
+	font-size: 2.2rem;
+	line-height: 1.15;
+}
+
+.hero p:not(.hero-label) {
+	line-height: 1.6;
+}
+
+.hero-button {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 10px 16px;
+	border-radius: 6px;
+	background: #087e8b;
+	color: #ffffff !important;
+	text-decoration: none;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+	background: #05616a;
+}
+
+.hero-image img {
+	display: block;
+	width: 100%;
+	height: 260px;
+	border-radius: 8px;
+	object-fit: cover;
+}
+
+@media (max-width: 600px) {
+	.navbar,
+	.nav-links {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.navbar {
+		min-height: 110px;
+		padding: 20px 8px;
+	}
+
+	.hero {
+		flex-direction: column;
+		gap: 16px;
+		margin: 24px auto;
+		padding: 20px 14px;
+	}
+
+	.hero h1 {
+		font-size: 1.35rem;
+	}
+
+	.hero-image img {
+		height: 170px;
+	}
+}
