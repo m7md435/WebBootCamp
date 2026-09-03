@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}Reports - Startup Platform{% endblock %}
+
+{% block content %}
+<h1>{{ report_type|title }} Report</h1>
+
+<p><strong>URL Path:</strong> /dashboard/reports/&lt;report_type&gt;/</p>
+<p><strong>Example:</strong> /dashboard/reports/sales/ or /dashboard/reports/progress/</p>
+<p><strong>Current Report:</strong> {{ report_type }}</p>
+
+<h2>Summary</h2>
+<p><strong>Total {{ report_type|title }}:</strong> 1,250+</p>
+<p><strong>Growth Rate:</strong> +15.3% (Month over month)</p>
+
+<h2>Detailed Breakdown</h2>
+<table border="1">
+    <tr>
+        <th>Date</th>
+        <th>{{ report_type|title }}</th>
+        <th>Revenue</th>
+        <th>Growth</th>
+    </tr>
+    <tr>
+        <td>Sept 1-5, 2026</td>
+        <td>320</td>
+        <td>$3,200</td>
+        <td>+5.2%</td>
+    </tr>
+    <tr>
+        <td>Sept 6-10, 2026</td>
+        <td>350</td>
+        <td>$3,500</td>
+        <td>+9.4%</td>
+    </tr>
+    <tr>
+        <td>Sept 11-15, 2026</td>
+        <td>380</td>
+        <td>$3,800</td>
+        <td>+8.6%</td>
+    </tr>
+    <tr>
+        <td>Sept 16-20, 2026</td>
+        <td>400</td>
+        <td>$4,000</td>
+        <td>+5.3%</td>
+    </tr>
+    <tr>
+        <td>Sept 21-25, 2026</td>
+        <td>450</td>
+        <td>$4,500</td>
+        <td>+12.5%</td>
+    </tr>
+</table>
+
+<h2>Export Options</h2>
+<button>Export PDF</button>
+<button>Export CSV</button>
+
+<h2>Other Reports</h2>
+<ul>
+    <li><a href="/dashboard/reports/progress/">Progress Report</a></li>
+    <li><a href="/dashboard/reports/sales/">Sales Report</a></li>
+    <li><a href="/dashboard/reports/analytics/">Analytics Report</a></li>
+    <li><a href="/dashboard/reports/users/">Users Report</a></li>
+</ul>
+{% endblock %}

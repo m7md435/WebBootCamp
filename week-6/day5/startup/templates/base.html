@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Startup Platform{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <h2>Startup Platform</h2>
+        <a href="/">Home</a>
+        <a href="/users/login/">Login</a>
+        <a href="/users/profile/demo/">Profile</a>
+        <a href="/courses/">Courses</a>
+        <a href="/payments/checkout/">Checkout</a>
+        <a href="/dashboard/">Dashboard</a>
+    </nav>
+    
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 Startup Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>

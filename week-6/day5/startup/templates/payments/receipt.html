@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}Receipt - Startup Platform{% endblock %}
+
+{% block content %}
+<h1>Order Receipt</h1>
+
+<p><strong>URL Path:</strong> /payments/receipt/&lt;order_id&gt;/</p>
+<p><strong>Example:</strong> /payments/receipt/ORD123456/</p>
+<p><strong>Order ID:</strong> {{ order_id }}</p>
+
+<h2>Payment successful!</h2>
+<p>Your order has been confirmed.</p>
+
+<h2>Order Details</h2>
+<p><strong>Order Number:</strong> {{ order_id }}</p>
+<p><strong>Order Date:</strong> September 3, 2026</p>
+<p><strong>Status:</strong> Completed</p>
+<p><strong>Email:</strong> customer@example.com</p>
+<p><strong>Payment Method:</strong> Credit Card ending in 3456</p>
+<p><strong>Invoice:</strong> <a href="#">Download PDF</a></p>
+
+<h2>Items</h2>
+<table border="1">
+    <tr>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Subtotal</th>
+    </tr>
+    <tr>
+        <td>Python Basics Course</td>
+        <td>1</td>
+        <td>$99.00</td>
+        <td>$99.00</td>
+    </tr>
+    <tr>
+        <td>Web Development Course</td>
+        <td>1</td>
+        <td>$149.00</td>
+        <td>$149.00</td>
+    </tr>
+    <tr>
+        <td colspan="3"><strong>Subtotal:</strong></td>
+        <td><strong>$248.00</strong></td>
+    </tr>
+    <tr>
+        <td colspan="3"><strong>Tax (10%):</strong></td>
+        <td><strong>$24.80</strong></td>
+    </tr>
+    <tr>
+        <td colspan="3"><strong>Total:</strong></td>
+        <td><strong>$272.80</strong></td>
+    </tr>
+</table>
+
+<h2>Next Steps</h2>
+<ul>
+    <li>Access your courses immediately from your dashboard</li>
+    <li>You can download this receipt anytime from your account</li>
+    <li>A confirmation email has been sent to your email address</li>
+</ul>
+
+<p><a href="/dashboard/">Go to Dashboard</a></p>
+<p><a href="/courses/">Browse More Courses</a></p>
+{% endblock %}

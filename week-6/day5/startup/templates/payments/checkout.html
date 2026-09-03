@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Checkout - Startup Platform{% endblock %}
+
+{% block content %}
+<h1>Checkout</h1>
+
+<p><strong>URL Path:</strong> /payments/checkout/</p>
+<p>Complete your purchase securely</p>
+
+<h2>Order Summary</h2>
+<table border="1">
+    <tr>
+        <td>Python Basics</td>
+        <td>$99.00</td>
+    </tr>
+    <tr>
+        <td>Web Development</td>
+        <td>$149.00</td>
+    </tr>
+    <tr>
+        <td><strong>Subtotal</strong></td>
+        <td><strong>$248.00</strong></td>
+    </tr>
+    <tr>
+        <td>Tax (10%)</td>
+        <td>$24.80</td>
+    </tr>
+    <tr>
+        <td><strong>Total</strong></td>
+        <td><strong>$272.80</strong></td>
+    </tr>
+</table>
+
+<h2>Payment Information</h2>
+<form>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <br><br>
+    
+    <label for="cardname">Cardholder Name:</label>
+    <input type="text" id="cardname" required>
+    <br><br>
+    
+    <label for="cardnumber">Card Number:</label>
+    <input type="text" id="cardnumber" placeholder="1234 5678 9012 3456" required>
+    <br><br>
+    
+    <label for="expiry">Expiry:</label>
+    <input type="text" id="expiry" placeholder="MM/YY" required>
+    <br><br>
+    
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" placeholder="123" required>
+    <br><br>
+    
+    <button type="submit">Complete Purchase</button>
+</form>
+{% endblock %}

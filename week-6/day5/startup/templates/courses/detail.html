@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Course Details - Startup Platform{% endblock %}
+
+{% block content %}
+<h1>Course Details</h1>
+
+<p><strong>URL Path:</strong> /courses/detail/&lt;slug&gt;/</p>
+<p><strong>Example:</strong> /courses/detail/python-basics/</p>
+<p><strong>Current Course:</strong> {{ slug }}</p>
+
+<h2>{{ slug|title }}</h2>
+
+<p><strong>Price:</strong> $99</p>
+<p><strong>Duration:</strong> 4 weeks</p>
+<p><strong>Level:</strong> Beginner</p>
+<p><strong>Instructor:</strong> John Smith</p>
+<p><strong>Students:</strong> 1,250+</p>
+<p><strong>Rating:</strong> 4.8/5</p>
+
+<h2>Course Description</h2>
+<p>Learn the fundamentals of {{ slug|title }} with our comprehensive course. This course covers all the essential concepts and best practices to get you started.</p>
+
+<h2>What You'll Learn</h2>
+<ul>
+    <li>Core concepts and fundamentals</li>
+    <li>Practical hands-on projects</li>
+    <li>Best practices and industry standards</li>
+    <li>Real-world applications</li>
+</ul>
+
+<h2>Course Curriculum</h2>
+<ol>
+    <li>Module 1: Introduction</li>
+    <li>Module 2: Basic Concepts</li>
+    <li>Module 3: Intermediate Topics</li>
+    <li>Module 4: Advanced Techniques</li>
+    <li>Module 5: Final Project</li>
+</ol>
+
+<button>Enroll Now</button>
+<a href="/courses/">Back to Courses</a>
+{% endblock %}

@@ -5,31 +5,31 @@ from django.http import Http404
 BOOKS = [
     {
         'id': 1,
-        'title': 'The Django Book',
-        'author': 'Adrian Holovaty',
-        'description': 'A comprehensive guide to building web applications with Django.',
-        'year': 2009
+        'title': 'Journey to Baghdad',
+        'author': 'Mohammad Hassan',
+        'description': 'A beautiful story about traveling through ancient Baghdad.',
+        'year': 2015
     },
     {
         'id': 2,
-        'title': 'Python Crash Course',
-        'author': 'Eric Matthes',
-        'description': 'Learn Python programming through hands-on projects.',
-        'year': 2019
+        'title': 'Tales of the Desert',
+        'author': 'Fatima Aisha',
+        'description': 'Exciting adventures and mysteries in the desert.',
+        'year': 2018
     },
     {
         'id': 3,
-        'title': 'Two Scoops of Django',
-        'author': 'Daniel Audicino',
-        'description': 'Best practices and patterns for Django development.',
-        'year': 2017
+        'title': 'Wisdom of the Ancients',
+        'author': 'Ahmed Omar',
+        'description': 'Ancient Arabic wisdom and philosophy lessons.',
+        'year': 2012
     },
     {
         'id': 4,
-        'title': 'Clean Code',
-        'author': 'Robert C. Martin',
-        'description': 'A handbook of agile software craftsmanship.',
-        'year': 2008
+        'title': 'The House of Roses',
+        'author': 'Layla Noor',
+        'description': 'A romantic tale of love and family traditions.',
+        'year': 2020
     },
 ]
 

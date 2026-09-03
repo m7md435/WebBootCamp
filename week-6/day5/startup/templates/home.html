@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Startup Platform{% endblock %}
+
+{% block content %}
+<h1>Welcome to Startup Platform</h1>
+
+<p>Your complete learning management system for courses, payments, and user management.</p>
+
+<h2>Quick Navigation</h2>
+<ul>
+    <li><a href="/users/login/">User Login</a></li>
+    <li><a href="/users/profile/demo/">User Profile</a></li>
+    <li><a href="/courses/">All Courses</a></li>
+    <li><a href="/courses/category/programming/">Programming Courses</a></li>
+    <li><a href="/payments/checkout/">Checkout</a></li>
+    <li><a href="/dashboard/">Dashboard</a></li>
+    <li><a href="/dashboard/reports/sales/">View Reports</a></li>
+</ul>
+
+<h2>Featured Sections</h2>
+<p><a href="/courses/">Explore Courses</a></p>
+<p><a href="/users/profile/demo/">View Profile</a></p>
+<p><a href="/payments/checkout/">Start Shopping</a></p>
+<p><a href="/dashboard/">Check Dashboard</a></p>
+{% endblock %}

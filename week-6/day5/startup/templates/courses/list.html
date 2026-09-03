@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}All Courses - Startup Platform{% endblock %}
+
+{% block content %}
+<h1>Available Courses</h1>
+
+<p><strong>URL Path:</strong> /courses/</p>
+<p>Browse all available courses and enroll today!</p>
+
+<table border="1">
+    <tr>
+        <th>Course Name</th>
+        <th>Category</th>
+        <th>Duration</th>
+        <th>Price</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>Python Basics</td>
+        <td>Programming</td>
+        <td>4 weeks</td>
+        <td>$99</td>
+        <td><a href="/courses/detail/python-basics/">View</a></td>
+    </tr>
+    <tr>
+        <td>Web Development</td>
+        <td>Web</td>
+        <td>6 weeks</td>
+        <td>$149</td>
+        <td><a href="/courses/detail/web-development/">View</a></td>
+    </tr>
+    <tr>
+        <td>Data Science</td>
+        <td>Programming</td>
+        <td>8 weeks</td>
+        <td>$199</td>
+        <td><a href="/courses/detail/data-science/">View</a></td>
+    </tr>
+    <tr>
+        <td>Django Advanced</td>
+        <td>Web</td>
+        <td>5 weeks</td>
+        <td>$129</td>
+        <td><a href="/courses/detail/django-advanced/">View</a></td>
+    </tr>
+</table>
+
+<h2>Filter by Category</h2>
+<p><a href="/courses/category/programming/">Programming</a></p>
+<p><a href="/courses/category/web/">Web Development</a></p>
+<p><a href="/courses/category/design/">Design</a></p>
+{% endblock %}

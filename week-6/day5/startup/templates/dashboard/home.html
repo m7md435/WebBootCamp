@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - Startup Platform{% endblock %}
+
+{% block content %}
+<h1>Dashboard Home</h1>
+
+<p><strong>URL Path:</strong> /dashboard/</p>
+<p>Welcome to your personal learning dashboard!</p>
+
+<h2>Statistics</h2>
+<p><strong>Courses Enrolled:</strong> 5</p>
+<p><strong>In Progress:</strong> 3</p>
+<p><strong>Completed:</strong> 2</p>
+<p><strong>Total Spent:</strong> $500</p>
+
+<h2>Current Courses</h2>
+<table border="1">
+    <tr>
+        <th>Course Name</th>
+        <th>Progress</th>
+        <th>Status</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>Python Basics</td>
+        <td>75%</td>
+        <td>In Progress</td>
+        <td><button>Continue</button></td>
+    </tr>
+    <tr>
+        <td>Web Development</td>
+        <td>100%</td>
+        <td>Completed</td>
+        <td><button>Certificate</button></td>
+    </tr>
+    <tr>
+        <td>Data Science</td>
+        <td>45%</td>
+        <td>In Progress</td>
+        <td><button>Continue</button></td>
+    </tr>
+</table>
+
+<h2>Quick Links</h2>
+<ul>
+    <li><a href="/courses/">Browse Courses</a></li>
+    <li><a href="/dashboard/reports/progress/">View Reports</a></li>
+    <li><a href="/users/profile/demo/">Edit Profile</a></li>
+</ul>
+{% endblock %}

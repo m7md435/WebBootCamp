@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Category - Startup Platform{% endblock %}
+
+{% block content %}
+<h1>{{ category|title }} Courses</h1>
+
+<p><strong>URL Path:</strong> /courses/category/&lt;category&gt;/</p>
+<p><strong>Example:</strong> /courses/category/programming/</p>
+<p><strong>Current Category:</strong> {{ category }}</p>
+
+<p>Showing all {{ category }} courses available on our platform.</p>
+
+<table border="1">
+    <tr>
+        <th>Course Name</th>
+        <th>Duration</th>
+        <th>Price</th>
+        <th>Students</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>{{ category|title }} Basics</td>
+        <td>4 weeks</td>
+        <td>$99</td>
+        <td>850</td>
+        <td><a href="/courses/detail/basics/">View</a></td>
+    </tr>
+    <tr>
+        <td>{{ category|title }} Advanced</td>
+        <td>6 weeks</td>
+        <td>$149</td>
+        <td>620</td>
+        <td><a href="/courses/detail/advanced/">View</a></td>
+    </tr>
+    <tr>
+        <td>{{ category|title }} Masterclass</td>
+        <td>8 weeks</td>
+        <td>$199</td>
+        <td>420</td>
+        <td><a href="/courses/detail/masterclass/">View</a></td>
+    </tr>
+</table>
+
+<p><a href="/courses/">Back to All Courses</a></p>
+{% endblock %}

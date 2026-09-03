@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}User Profile - Startup Platform{% endblock %}
+
+{% block content %}
+<h1>User Profile</h1>
+
+<p><strong>URL Path:</strong> /users/profile/&lt;username&gt;/</p>
+<p><strong>Example:</strong> /users/profile/john_doe/</p>
+<p><strong>Current User:</strong> {{ username }}</p>
+
+<h2>{{ username }}'s Profile</h2>
+
+<p><strong>Email:</strong> {{ username }}@example.com</p>
+<p><strong>Member Since:</strong> January 2024</p>
+<p><strong>Courses Enrolled:</strong> 5</p>
+<p><strong>Total Spent:</strong> $500</p>
+
+<button>Edit Profile</button>
+<button>Logout</button>
+
+<h2>Recent Courses</h2>
+<ul>
+    <li>Python Basics - In Progress</li>
+    <li>Web Development - Completed</li>
+    <li>Data Science - In Progress</li>
+</ul>
+{% endblock %}

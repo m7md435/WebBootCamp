@@ -1,76 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Library{% endblock %}</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        
-        nav {
-            background-color: rgba(0, 0, 0, 0.1);
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 30px;
-        }
-        
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: opacity 0.3s;
-        }
-        
-        nav a:hover {
-            opacity: 0.8;
-        }
-        
-        h1 {
-            color: white;
-            margin-bottom: 20px;
-        }
-        
-        .content {
-            background: white;
-            border-radius: 8px;
-            padding: 30px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-        }
-        
-        {% block extra_style %}{% endblock %}
-    </style>
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <ul>
-                <li><a href="{% url 'book_list' %}">📚 Library Home</a></li>
-            </ul>
-        </nav>
-        
-        {% block content %}{% endblock %}
-    </div>
+    <h1><a href="{% url 'book_list' %}">Library Home</a></h1>
+    {% block content %}{% endblock %}
 </body>
 </html>
